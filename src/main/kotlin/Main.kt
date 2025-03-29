@@ -16,4 +16,14 @@ fun main() {
     memberCount.times(2) // Multiple
     memberCount.plus(2)
     memberCount.minus(2)
+
+    // enum
+    Nationality.KOREA.printDescription()
+    println(Nationality.KOREA.name) // name: Built-In properties
+    println(Nationality.KOREA.ordinal) // ordinal: Built-In properties
+
+    val name = Nationality.KOREA.name
+    val nationality = Nationality.valueOf(name) // get enum from a String(name)
+    println(nationality)
+
 }
